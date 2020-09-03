@@ -55,7 +55,7 @@ function renderAvatar(user) {
     if (user.user_pic) {
         //3.1渲染图片头像
         $('.text-avatar').hide()
-        $('.layui-nav-img').attr('src', user.user_piv).show()
+        $('.layui-nav-img').attr('src', user.user_pic).show()
     } else {
         //3.2渲染文字头像
         var first = name[0].toUpperCase()
