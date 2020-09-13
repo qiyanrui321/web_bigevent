@@ -14,6 +14,7 @@
 iframe {
     width: 100%;
     height: 100%;
+    overflow: scroll;
 }
 
 .layui-body {
@@ -34,6 +35,7 @@ img {
     text-align: center;
     font-size: 12px;
     user-select: none;
+    /* 禁止里面的文字内容被选中 */
 }
 
 .layui-side-scroll .userinfo {

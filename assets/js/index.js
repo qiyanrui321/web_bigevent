@@ -4,7 +4,7 @@ $(function() {
             // 为退出按钮绑定事件
         $("#btnLogout").on('click', function() {
             //提示用户是否退出
-            layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
+            layui.layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
                 // 1.清空本地存储中的token
                 localStorage.removeItem('token')
                     // 2.重新跳转到登录页面
@@ -47,7 +47,7 @@ function getUserInfo() {
 }
 //渲染用户头像
 function renderAvatar(user) {
-    // 1.获取用户的昵称，如果没有就用用户民
+    // 1.获取用户的昵称，如果没有就用用户名
     var name = user.nickname || user.username;
     // 2.设置欢迎的文本
     $(".welcome").html("欢迎&nbsp;&nbsp;" + name)
